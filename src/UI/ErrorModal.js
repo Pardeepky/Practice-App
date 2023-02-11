@@ -5,7 +5,7 @@ import Button from './Button'
 
 const ErrorModal = props => {
     return (
-        <div>
+        <>
             <div className='backdrop' onClick={props.onConfirm} />
             <Card className='modal'>
                 <header className='header'>
@@ -18,7 +18,7 @@ const ErrorModal = props => {
                     <Button onClick={props.onConfirm}>Okay</Button>
                 </footer>
             </Card>
-        </div>
+        </>
     )
 }
 
